@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="index.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+</head>
+<body>
+    <script>
+        jQuery(function($){
+        $("#phone").mask("+7 (999) 999-99-99");
+        });
+    </script>
+    <div class="form">
+        <header class="form__title">
+            Обратная форма
+        </header>
+        <div class="inputs">
+            <input type="text" id="name" class="inputs__input">
+            <label for="name" class="inputs__name">
+                ФИО
+            </label>
+
+            <input type="tel" id="phone" class="inputs__input">
+            <label for="phone" class="inputs__phone">
+                Телефон
+            </label>
+
+            <input type="text" id="email" class="inputs__input">
+            <label for="email" class="inputs__email">
+                E-mail
+            </label>
+
+            <textarea id="text" class="inputs__textarea"></textarea>
+            <label for="text" class="inputs__text">
+                Сообщение
+            </label>
+        </div>
+        <p class="form__information">
+            Отправляя форму, Вы соглашаетесь на <a class="form__information_link" href="#">обработку персональных данных</a>
+        </p>
+        <button class="form__button">
+            Отправить
+        </button>
+    </div>
+</body>
+</html>

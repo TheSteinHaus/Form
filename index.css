@@ -1,0 +1,100 @@
+body {
+  background-color: rgb(216, 216, 216);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 200px auto;
+  background-color: white;
+  width: 700px;
+  padding: 40px 0;
+}
+.form__title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.form__information {
+  font-size: 12px;
+  color: rgba(38, 50, 56, 0.613);
+}
+.form__information_link {
+  color: rgba(38, 50, 56, 0.613);
+}
+.form__button {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(4, 183, 4);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  margin-top: 5px;
+  padding: 12px 50px;
+  font-size: 18px;
+}
+.form .inputs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0 100px;
+  position: relative;
+}
+.form .inputs label {
+  transition: 0.2s all;
+  position: absolute;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.626);
+  background-color: white;
+  padding: 0 4px;
+}
+.form .inputs__name {
+  top: 0.3%;
+  left: 2.5%;
+}
+.form .inputs__phone {
+  top: 0.2%;
+  left: 43%;
+}
+.form .inputs__email {
+  top: 25%;
+  left: 2.5%;
+}
+.form .inputs__text {
+  top: 49.5%;
+  left: 2.5%;
+}
+.form .inputs__input {
+  transition: 0.2s all;
+  margin: 10px;
+  outline: none;
+  flex: 0 1 33%;
+  box-shadow: 0 0 0 1px rgba(128, 128, 128, 0.325);
+  border-color: transparent;
+  border-radius: 5px;
+  height: 25px;
+  width: 200px;
+  padding: 10px;
+  font-size: 20px;
+}
+.form .inputs__textarea {
+  transition: 0.2s all;
+  margin: 10px;
+  flex: 0 1 75%;
+  box-shadow: 0 0 0 1px rgba(128, 128, 128, 0.325);
+  border-color: transparent;
+  outline: none;
+  border-radius: 5px;
+  resize: none;
+  height: 100px;
+  width: 0px;
+  padding: 10px;
+  font-size: 20px;
+}
+.form .inputs :focus {
+  box-shadow: 0 0 0 2px rgb(13, 186, 13);
+}
+.form .inputs :focus + label {
+  color: rgb(13, 186, 13);
+}/*# sourceMappingURL=index.css.map */
